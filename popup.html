@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipurpose chrome extension</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="randomJoke">
+            <button id="jokebtn">Get a Random Joke</button>
+            <div id="jokeElement"></div>
+        </div>
+        <div class="motivationQuote">
+            <button id="quotebtn">Get a Motivational Quote</button>
+            <div id="quoteElement"></div>
+        </div>
+        <div class="calculator">
+            <h1 class="text-center">Calculator</h1>
+            <div class="container flex flex-col item-center mx-auto m-w-20">
+                <div class="row">
+                    <input class="input" type="text"></input>
+                </div>
+                <div class="row">
+                    <button class="button">C</button>
+                    <button class="button">D</button>
+                    <button class="button">%</button>
+                    <button class="button">^</button>
+                </div>
+                <div class="row">
+                    <button class="button">7</button>
+                    <button class="button">8</button>
+                    <button class="button">9</button>
+                    <button class="button">*</button>
+                </div>
+                <div class="row">
+                    <button class="button">4</button>
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                    <button class="button">/</button>
+                </div>
+                <div class="row">
+                    <button class="button">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button">+</button>
+                </div>
+                <div class="row">
+                    <button class="button">0</button>
+                    <button class="button">.</button>
+                    <button class="button">=</button>
+                    <button class="button">-</button>
+                </div>
+            </div>
+        </div>
+        <div class="todoList">
+            <div class="conatinerTodo">
+                <input id="todo-title" type="text" />
+                <input type="date" id="date-picker" />
+                <button class="buttonClickTodo">Add Todo</button>
+            </div>
+            <div id="todo-list"></div>
+        </div>
+    </div>
+    <script src="./script(randomJoke).js"></script>
+    <script src="./script(motivationalQuote).js"></script>
+    <script src="./script(calculator).js"></script>
+    <script src="./script(todo-list).js"></script>
+</body>
+
+</html>

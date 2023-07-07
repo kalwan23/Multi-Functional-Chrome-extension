@@ -1,0 +1,17 @@
+body{
+    width:200px;
+    height:100px;
+    background-color:aliceblue;
+    display:flex;
+    justify-content:center;
+}
+
+p{
+    display:inner-flex;
+    margin:auto 7px;
+    font-size:18px;
+    color:blue;
+    border-radius:6px;
+    border:none;
+    padding:7px;
+}
