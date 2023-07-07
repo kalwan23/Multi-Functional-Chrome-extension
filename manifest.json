@@ -1,12 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "MultuPurpose Extension",
+  "name": "Multi-Functional Extension",
   "version": "0.0.10",
 
   "permissions": [
     "tabs",
     "activeTab",
-    "scripting"
+    "scripting",
+    "<all_urls>",
+    "storage"
   ],
 
   "icons": {
@@ -24,8 +26,15 @@
     "scripts": [
       "background.js"
       ],
-    "persistent": true
+    "persistent": false
   },
+
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
 
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
